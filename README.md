@@ -1,22 +1,19 @@
-# JellyMl
+# Hack-words
 
-JellyML is an open-source tool (python API and command line) for effortlessly embedding a snapshot of your code 
-             | into a checkpoint of a pytorch model.
-Learn more at [jellyml.com](jellyml.com)
+This is a fun little game I thought of while playing around with some
+        cool math called [compressed sensing](https://en.wikipedia.org/wiki/Compressed_sensing).
+Check it out at [hack-words.com](https://hack-words.com)
 
-## Structure of the jellyml repository
-(Note that the jellyml repository is a monorepo. If you are
-reading this from the python package source code,
-go to github.com/mmulet/jellyml to see the whole repository)
+## Structure of the hack-words repository
+hack-words
 
-- jellyml is the source for the python package
-- jellyml-lightning is the source for pytorch lightning plugin
 - client is the source for the website
 - dev_server is the source for the development server of the website
+- create_model. Source for the python model creation script
 
 ## Build
 
-### jellyml
+### create_model
 
 1. Make a venv
 ```sh
@@ -26,25 +23,14 @@ python3 -m venv venv
 # bash
 source venv/bin/activate
 ```
-2. Install build
+2. Install dependencies
 ```sh
-pip install build
+pip install torch ptwt pillow numpy
 ```
-3.  Build the package
+3. generate the models and data
+From the project root
 ```sh
-cd jellyml
-python -m build
-pip install dist/jellyml-0.0.1-py3-none-any.whl
-```
-
-### jellyml-lightning
-1. Follow the directions for building and installing jellyml.
-   jellyml is a dependency of jellyml-lightning.
-2. Build the package
-```sh
-cd jellyml-lightning
-python -m build
-pip install dist/jellyml-lightning-0.0.1-py3-none-any.whl
+python ./create_model/generate_all_data.py
 ```
 
 ### Website
@@ -67,14 +53,4 @@ npm install .
 cd ../dev_server
 npm install .
 npm run build
-```
-
-## Tests
-
-Located in the source files in src/jellyml. Have the prefix test\_.
-Run them as a module
-
-```sh
-cd src;
-python3 -m jellyml.test_all
 ```
