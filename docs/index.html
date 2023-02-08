@@ -1,0 +1,1064 @@
+<!DOCTYPE html><template> <span>version-1.0</span></template><html lang="en"><head><meta charset="utf-8" content="text/html"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#1e1e1e"><style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+========================================================================== */
+
+/**
+* 1. Correct the line height in all browsers.
+* 2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+
+html {
+line-height: 1.15; /* 1 */
+-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+========================================================================== */
+
+/**
+* Remove the margin in all browsers.
+*/
+
+body {
+margin: 0;
+}
+
+/**
+* Render the `main` element consistently in IE.
+*/
+
+main {
+display: block;
+}
+
+/**
+* Correct the font size and margin on `h1` elements within `section` and
+* `article` contexts in Chrome, Firefox, and Safari.
+*/
+
+h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+
+/* Grouping content
+========================================================================== */
+
+/**
+* 1. Add the correct box sizing in Firefox.
+* 2. Show the overflow in Edge and IE.
+*/
+
+hr {
+box-sizing: content-box; /* 1 */
+height: 0; /* 1 */
+overflow: visible; /* 2 */
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+
+pre {
+font-family: monospace, monospace; /* 1 */
+font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+========================================================================== */
+
+/**
+* Remove the gray background on active links in IE 10.
+*/
+
+a {
+background-color: transparent;
+}
+
+/**
+* 1. Remove the bottom border in Chrome 57-
+* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+*/
+
+abbr[title] {
+border-bottom: none; /* 1 */
+text-decoration: underline; /* 2 */
+text-decoration: underline dotted; /* 2 */
+}
+
+/**
+* Add the correct font weight in Chrome, Edge, and Safari.
+*/
+
+b,
+strong {
+font-weight: bolder;
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp {
+font-family: monospace, monospace; /* 1 */
+font-size: 1em; /* 2 */
+}
+
+/**
+* Add the correct font size in all browsers.
+*/
+
+small {
+font-size: 80%;
+}
+
+/**
+* Prevent `sub` and `sup` elements from affecting the line height in
+* all browsers.
+*/
+
+sub,
+sup {
+font-size: 75%;
+line-height: 0;
+position: relative;
+vertical-align: baseline;
+}
+
+sub {
+bottom: -0.25em;
+}
+
+sup {
+top: -0.5em;
+}
+
+/* Embedded content
+========================================================================== */
+
+/**
+* Remove the border on images inside links in IE 10.
+*/
+
+img {
+border-style: none;
+}
+
+/* Forms
+========================================================================== */
+
+/**
+* 1. Change the font styles in all browsers.
+* 2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+font-family: inherit; /* 1 */
+font-size: 100%; /* 1 */
+line-height: 1.15; /* 1 */
+margin: 0; /* 2 */
+}
+
+/**
+* Show the overflow in IE.
+* 1. Show the overflow in Edge.
+*/
+
+button,
+input { /* 1 */
+overflow: visible;
+}
+
+/**
+* Remove the inheritance of text transform in Edge, Firefox, and IE.
+* 1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select { /* 1 */
+text-transform: none;
+}
+
+/**
+* Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+-webkit-appearance: button;
+}
+
+/**
+* Remove the inner border and padding in Firefox.
+*/
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+border-style: none;
+padding: 0;
+}
+
+/**
+* Restore the focus styles unset by the previous rule.
+*/
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+outline: 1px dotted ButtonText;
+}
+
+/**
+* Correct the padding in Firefox.
+*/
+
+fieldset {
+padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+* 1. Correct the text wrapping in Edge and IE.
+* 2. Correct the color inheritance from `fieldset` elements in IE.
+* 3. Remove the padding so developers are not caught out when they zero out
+*    `fieldset` elements in all browsers.
+*/
+
+legend {
+box-sizing: border-box; /* 1 */
+color: inherit; /* 2 */
+display: table; /* 1 */
+max-width: 100%; /* 1 */
+padding: 0; /* 3 */
+white-space: normal; /* 1 */
+}
+
+/**
+* Add the correct vertical alignment in Chrome, Firefox, and Opera.
+*/
+
+progress {
+vertical-align: baseline;
+}
+
+/**
+* Remove the default vertical scrollbar in IE 10+.
+*/
+
+textarea {
+overflow: auto;
+}
+
+/**
+* 1. Add the correct box sizing in IE 10.
+* 2. Remove the padding in IE 10.
+*/
+
+[type="checkbox"],
+[type="radio"] {
+box-sizing: border-box; /* 1 */
+padding: 0; /* 2 */
+}
+
+/**
+* Correct the cursor style of increment and decrement buttons in Chrome.
+*/
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+height: auto;
+}
+
+/**
+* 1. Correct the odd appearance in Chrome and Safari.
+* 2. Correct the outline style in Safari.
+*/
+
+[type="search"] {
+-webkit-appearance: textfield; /* 1 */
+outline-offset: -2px; /* 2 */
+}
+
+/**
+* Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+[type="search"]::-webkit-search-decoration {
+-webkit-appearance: none;
+}
+
+/**
+* 1. Correct the inability to style clickable types in iOS and Safari.
+* 2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+-webkit-appearance: button; /* 1 */
+font: inherit; /* 2 */
+}
+
+/* Interactive
+========================================================================== */
+
+/*
+* Add the correct display in Edge, IE 10+, and Firefox.
+*/
+
+details {
+display: block;
+}
+
+/*
+* Add the correct display in all browsers.
+*/
+
+summary {
+display: list-item;
+}
+
+/* Misc
+========================================================================== */
+
+/**
+* Add the correct display in IE 10+.
+*/
+
+template {
+display: none;
+}
+
+/**
+* Add the correct display in IE 10.
+*/
+
+[hidden] {
+display: none;
+}</style><style>html {
+  background-color: #1e1e1e;
+  
+}
+body {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  max-width: 90%;
+}
+
+@media (min-width: 600px) {
+  main {
+    max-width: 50%;
+    padding: 20px 0px;
+
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 25px;
+ 
+}
+
+.content {
+  padding: 20px;
+}
+
+
+
+.red-line {
+    min-width: 100%; height:5px; background-color: red;
+}
+.left-align {
+  width: 100%;
+}
+
+.animation-toggle-box {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+td {
+  min-width: 150px;
+}
+.header-anchor {
+  text-decoration: none;
+  color: black;
+}</style><title>hack-words</title><link rel="stylesheet" href="/code/index.css"><style>@font-face {
+  font-family: 'ChiKareGo2';
+  src: url('/static/ChiKareGo2.ttf');
+}
+@font-face {
+  font-family: 'karen2mono';
+  src: url('/static/karen2mono.ttf');
+}
+  @font-face {
+  font-family: 'trueitalicWIP';
+  src: url('/static/trueitalicWIP.ttf');
+}
+@font-face {
+  font-family: 'frak';
+  src: url('/static/PixelFraktur.ttf');
+}
+@font-face {
+  font-family: 'Mademoiselle';
+  src: url('/static/Mademoiselle.ttf');
+}
+#terminal {
+  color: #e4ad39; 
+  padding: 10px;
+  margin-top: 10px;
+  height: 168px;
+  width: 265px; 
+  font-family: karen2mono, monospace; 
+  position: absolute;
+  top: 256px;
+  left: 113px;
+  display: flex;
+  flex-flow: column
+}
+.terminal-text {
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: black; 
+  color: #e4ad39;
+  width: 100%;
+
+}
+.box {
+  align-items: center;
+  border: 1px solid #e4ad39;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+  color: #e4ad39;
+  max-width: 80%;
+}
+@media (min-width: 600px) {
+  .box {
+    max-width: 50%;
+    padding: 20px
+
+  }
+}
+a {
+  color: #559cd5;
+}
+.fancy {
+  font-family: frak;
+  font-size: 20px;
+   color: #e4ad39;
+}
+.handwritten {
+  font-family: trueitalicWIP;
+  font-size: 30px;
+}
+.cursive{
+  font-family: Mademoiselle;
+  font-size: 30px;
+}
+pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#1e1e1e;color:#dcdcdc}.hljs-keyword,.hljs-literal,.hljs-name,.hljs-symbol{color:#569cd6}.hljs-link{color:#569cd6;text-decoration:underline}.hljs-built_in,.hljs-type{color:#4ec9b0}.hljs-class,.hljs-number{color:#b8d7a3}.hljs-meta .hljs-string,.hljs-string{color:#d69d85}.hljs-regexp,.hljs-template-tag{color:#9a5334}.hljs-formula,.hljs-function,.hljs-params,.hljs-subst,.hljs-title{color:#dcdcdc}.hljs-comment,.hljs-quote{color:#57a64a;font-style:italic}.hljs-doctag{color:#608b4e}.hljs-meta,.hljs-meta .hljs-keyword,.hljs-tag{color:#9b9b9b}.hljs-template-variable,.hljs-variable{color:#bd63c5}.hljs-attr,.hljs-attribute{color:#9cdcfe}.hljs-section{color:gold}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-bullet,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-selector-tag{color:#d7ba7d}.hljs-addition{background-color:#144212;display:inline-block;width:100%}.hljs-deletion{background-color:#600;display:inline-block;width:100%}
+code {
+  font-family: karen2mono;
+  font-size: 20px;
+}
+
+.header-anchor {
+  color: #e4ad39;
+  font-size: 30px;
+}
+
+
+button {
+  background-color: #e4ad39;
+  color: black;
+  border: none;
+}
+body {
+  font-family: ChiKareGo2;
+}
+
+
+</style></head><body><canvas id="canvas" width="64" height="64" style="display: none;"></canvas><img src="/static/logo0001.png" style="width: 100%; max-width: 512px; margin: 0 auto; display: block; padding: 10px;"><div class="box"><h3>Welcome to hack-words</h3>
+<p>This is a fun little game I thought of while playing around with some
+cool math called <a href="https://en.wikipedia.org/wiki/Compressed_sensing">compressed sensing</a>. You can read more about the math, the hacking, and what makes this game
+possible by reading the <a href="/#the-math-and-the-hacking">blog post under the game</a>.</p>
+<h3>How to play</h3>
+<p>The goal of the game is to solve the riddle in the terminal. You can type in your answer in the text box, and
+a correct answer will fill in the compressed measurements and reveal an image. Take note that only some of
+the alphabet is used in the game, so pressing g over and over again will not help you.</p>
+<h3>Flashing images warning:</h3>
+<p>I decompress the images live, so you can see the image being reconstructed as you type. This means that the images
+will flash on the screen. If you are sensitive to flashing images, please do not play this game.</p>
+</div><h2 class="fancy" style="text-align: center;">The story so far...</h2><div class="box"><div class="handwritten"><p>My dear friend,</p>
+<p>I have successfully recovered an ancient tablet from the bottom of the sea.
+The inscriptions on it appear to be written in a long lost language,
+and I believe it holds valuable information.
+Unfortunately, my attempts to decipher it have been unsuccessful so far.</p>
+<p>I am writing to ask for your assistance.
+I recall you mentioned having access to an ancient technology known as a &quot;floppy drive&quot;.
+I believe it may be able to help us unlock the secrets of this tablet.
+If you are willing, I would be greatly appreciative if you could use
+your knowledge of this technology to decode the inscriptions.
+I eagerly await your reply.</p>
+<p>Best regards,</p>
+</div><div class="cursive">Dr. J. B. Watson</div></div><div style="position: relative"><canvas id="computer_canvas" width="512" height="1024" style="max-width: 100vw;"></canvas><div id="terminal"><div id="question-box">Loading... please wait.</div><div id="interactive-box" style="display: none; flex-flow: column; justify-content: space-between; flex: 1;"><div id="answer-box" style="display: flex; flex-flow: row; align-items: flex-start;"><div>&gt;</div><textarea class="terminal-text" id="terminal-input" placeholder="Type here..."></textarea></div><div style="display: flex; flex-flow: row; justify-content: space-between; width: 100%;"><button id="left-button">&larr;</button><div id="win-status"></div><button id="right-button">&rarr;</button></div></div></div></div><button id="big-button" style="display: none; background-color: #1e1e1e; outline: none; border: none;"><canvas id="big-button-canvas" width="256" height="256"></canvas></button><div class="box" id="win-letter" style="display: none;"><div class="handwritten"><p>My dear friend,</p>
+<p>Fantastic news! &quot;You Win&quot; is quite a triumphant message to find after such a daring expedition.
+I am overjoyed that our efforts have paid off.
+I am sure this will be a great moment to reflect upon for years to come. I mean,
+what could the ancients have been trying to tell us? I can spend the rest of
+my career writing papers pondering this very question.
+With this discovery, I'm sure to make tenure, and maybe even super tenure, or what
+about mega tenure? The possibilities are endless.</p>
+<p>Please accept my sincerest congratulations and my thanks for your hard work in decrypting the tablet. Your assistance was invaluable.</p>
+<p>Best regards,</p>
+</div><div class="cursive">Dr. J. B. Watson</div></div><div class="box"><p>Thanks for playing!
+If you enjoy this kind of stuff, follow me on <a href="https://github.com/mmulet">GitHub</a>
+or even <a href="https://github.com/sponsors/mmulet">sponsor</a> if you want to support my work.</p>
+<p>Check out my other stuff:</p>
+<ul>
+<li><a href="https://jellyml.com">JellyML</a> - A tool for repeatable machine learning experiments</li>
+<li><a href="https://www.coderelay.io/fontemon.html">Fontemon</a> - A pokemon parody in a font</li>
+<li><a href="https://www.coderelay.io">Code Relay</a> - A crowdsourced coding site.</li>
+</ul>
+</div><div class="box"><h2 id="the-math-and-the-hacking" tabindex="-1"><a class="header-anchor" href="#the-math-and-the-hacking"><span>The math and the hacking</span></a></h2>
+<p>Michael Mulet - February 5th, 2023</p>
+<p>The best way to show you what I did, and why, will be to jump into the code (<a href="https://github.com/mmulet/hack-words">which you can download here</a>).
+The &quot;meat&quot; of this game in written in python and using the <a href="https://pytorch.org">pytorch library</a>. The code is then compiled for the
+web using <a href="https://onnxruntime.ai/docs/tutorials/web/">the onnx runtime for the web</a>.</p>
+<h3 id="compressed-sensing" tabindex="-1"><a class="header-anchor" href="#compressed-sensing"><span>Compressed Sensing</span></a></h3>
+<p>Compressed sensing is a method of acquiring data from a signal and reconstructing the signal. What makes it interesting is that the amount of
+measurements you make (m) is much less than the number of elements in the signal (n).</p>
+<p>I'm not going to go into the theory of why it works, because I could find a lot of good resources on the internet:</p>
+<ul>
+<li>Video Lecture <a href="https://www.youtube.com/watch?v=G3WLsZAoTuo">MIT 6.854 Spring 2016 Lecture 22: Compressed Sensing</a></li>
+<li>Lecture Notes<a href="https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-of-data-science-fall-2015/e819e378cf61f25069e3d38d30e0d520_MIT18_S096F15_Ses18_19.pdf">Compressed Sensing and Sparse Recovery</a></li>
+<li>Book <a href="https://www.amazon.com/Mathematical-Introduction-Compressive-Numerical-Harmonic-ebook/dp/B00EE4E7FC/ref=sr_1_2?crid=2MPIAC4OG6814&amp;keywords=foucart+compressed+sensing&amp;qid=1675719670&amp;s=books&amp;sprefix=foucart+compressed+sensing%2Cstripbooks%2C107&amp;sr=1-2">Compressed Sensing and its application</a></li>
+</ul>
+<p>However, I did have trouble finding some good examples of how to implement it, so that's what I want to share here.
+Below you will be able to find the instructions on how to implement everything from wavelet transform to autodiff
+by hand.</p>
+<p>Let's start by taking a measurement:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> torch
+<span class="hljs-keyword">from</span> torch <span class="hljs-keyword">import</span> Tensor
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">compressed_sensing</span>(<span class="hljs-params">
+    <span class="hljs-comment"># Measurement Matrix is an m x n matrix</span>
+    measurement_matrix: Tensor, 
+    <span class="hljs-comment"># signal is an n dimensional vector</span>
+    signal: Tensor</span>):
+
+    <span class="hljs-keyword">return</span> torch.matmul(
+                  measurement_matrix, 
+                  signal)
+
+measurement = compressed_sensing(
+                  measurement_matrix, 
+                  signal)
+</code></pre>
+<p>There, we sensed it! It's that easy. It's just matrix multiplication.
+Let's break it down.</p>
+<pre><code class="hljs language-python"><span class="hljs-comment"># our signal</span>
+<span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image
+<span class="hljs-keyword">from</span> torchvision.transforms.functional <span class="hljs-keyword">import</span> pil_to_tensor
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">get_signal</span>():
+  <span class="hljs-comment"># this a 32x32 black and white image</span>
+  img = Image.<span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;images/1.png&quot;</span>)
+  signal = pil_to_tensor(img).flatten()
+  <span class="hljs-keyword">return</span> signal
+</code></pre>
+<p>The signal is just a bunch of pixels, in our case a 32x32 image that we flatten down to
+a 1024 dimensional vector.</p>
+<p>The measurement matrix is a bit more complicated. There are a lot of choices you can make,
+many of which depend on the signal being sensed. In all cases, the measurement matrix is a
+matrix with dimensions <code>m x n</code>, where <code>m</code> is the number of measurements, and <code>n</code> is the
+dimension of the signal (1024 in our case).</p>
+<p>So what did I pick for the measurement matrix? I picked a random matrix from a
+<a href="https://en.wikipedia.org/wiki/Bernoulli_distribution">bernoulli distribution</a>.
+It <a href="https://ieeexplore.ieee.org/document/5512379">has been shown</a> that (with high probability) this matrix will be able to recover the signal.
+Plus, it's only a couple lines of code to generate.</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> torch
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">generate_bernoulli_measurement_matrix</span>(<span class="hljs-params">
+  measurements: <span class="hljs-built_in">int</span>, 
+  signal_length: <span class="hljs-built_in">int</span></span>) -&gt; torch.Tensor:
+    one =  torch.bernoulli(
+           torch.empty(
+                measurements, 
+                signal_length)
+           .uniform_(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>))
+    two = one - <span class="hljs-number">1</span>
+    <span class="hljs-keyword">return</span> one + two
+</code></pre>
+<p>There are structured matrices (faster to compute, and smaller to store), but I won't go into that here.</p>
+<p>To recap, we take the signal and multiply it by the measurement matrix (random -1, and 1). What
+we get in return is a vector of measurement.</p>
+<h3 id="sparsity-and-wavelets" tabindex="-1"><a class="header-anchor" href="#sparsity-and-wavelets"><span>Sparsity and Wavelets</span></a></h3>
+<p>The entire point of compressed sensing is to recover the signal from the measurements. In the general sense,
+you can't just do this with any matrix. Because the number of measurements is less than the dimension of the signal,
+there are an infinite number of signals that could have generated the measurements. It's an <a href="https://en.wikipedia.org/wiki/Underdetermined_system">underdetermined system</a>.</p>
+<p>We need to add some constraints to the problem. This is where the magic happens. The constraint we add is that the signal
+must be sparse. This means that the signal has a lot of zeros, See:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> torch
+this_is_sparse = torch.tensor([
+    <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>,<span class="hljs-number">0</span>])
+
+<span class="hljs-comment"># these number were chosen randomly</span>
+this_is_not_sparse = torch.tensor([
+    <span class="hljs-number">81.694</span>, <span class="hljs-number">32.424</span>, <span class="hljs-number">22.22</span>,<span class="hljs-number">50.55</span>, <span class="hljs-number">39.883</span>, <span class="hljs-number">99.10</span>])
+</code></pre>
+<p>At this point, you might be thinking:</p>
+<p>&quot;Are images sparse?&quot;</p>
+<p>No, but we can <a href="https://en.wikipedia.org/wiki/Orthogonal_transformation">transform</a> the image to make it sparse.
+I've read before that natural images are sparse in the
+<a href="https://en.wikipedia.org/wiki/Wavelet_transform">wavelet domain</a> (A Mathematical Introduction to Compressive Sensing, Foucart, and Rauhut, page 11).
+A lot of people will probably be familiar with the fourier transform, but not everyone is familiar with the wavelet transform,
+so have a look below at a 2d wavelet transform of an image.</p>
+<p>Fun Fact: Electrical engineers have to do a fourier transform every day. Otherwise their bodies will disintegrate into the
+sinusoids that make up everything.</p>
+<img src="/static/Jpeg2000_2-level_wavelet_transform-lichtenstein.png" style="max-width:80%;" alt="2d wavelet transform"><p>Look at how sparse this is! (Alessio Damato CC BY-SA 3.0 via <a href="https://commons.wikimedia.org/wiki/File:Jpeg2000_2-level_wavelet_transform-lichtenstein.png">Wikimedia Commons</a> )</p>
+<p>Specifically, I'm using the <a href="https://en.wikipedia.org/wiki/Haar_wavelet">haar wavelet</a>, the oldest and simplest wavelet.
+I mostly like to use it for low-resolution images because more complicated wavelets tend to have a &quot;smoothing&quot; effect
+that I find undesirable.</p>
+<p>The haar wavelet is simple and computes in O(n) (faster than <a href="https://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm">cooley-tukey's</a> O(n log n)).
+I'm going to show how you compute it by using a 2d signal and 2d kernels.</p>
+<p>Feel free to skip this, you would want to use torch.conv2d or
+a good library like <a href="https://github.com/v0lta/PyTorch-Wavelet-Toolbox">PyTorch Wavelets Toolbox</a> if you were doing this for real.</p>
+<pre><code class="hljs language-python"><span class="hljs-comment"># manually convolving a 2d signal with </span>
+<span class="hljs-comment"># 4 2d kernels to show how the </span>
+<span class="hljs-comment"># haar wavelet works.</span>
+<span class="hljs-comment"># We are using mutltiresolution analysis here</span>
+<span class="hljs-comment"># which means we are going to do this a bunch of times, given by the level</span>
+<span class="hljs-comment"># ( we apply the transformation again to the output of convolving the image</span>
+<span class="hljs-comment"># the the lowpass kernel)</span>
+<span class="hljs-comment"># Then we are going to do the inverse transformation</span>
+level = <span class="hljs-number">2</span>
+
+power_of_2 = <span class="hljs-built_in">int</span>(math.<span class="hljs-built_in">pow</span>(<span class="hljs-number">2</span>,level))
+test_vector = torch.arange(<span class="hljs-number">0</span>,power_of_2*power_of_2, dtype=torch.<span class="hljs-built_in">float</span>).reshape((power_of_2,power_of_2))
+
+
+<span class="hljs-comment">#These are the coefficients of the haar wavelet</span>
+lowpass_kernel = <span class="hljs-number">0.5</span>* torch.tensor([[<span class="hljs-number">1</span>,<span class="hljs-number">1</span>],[<span class="hljs-number">1</span>,<span class="hljs-number">1</span>]], dtype=torch.<span class="hljs-built_in">float</span>)
+low_high_kernel = <span class="hljs-number">0.5</span>* torch.tensor([[<span class="hljs-number">1</span>,<span class="hljs-number">1</span>],[-<span class="hljs-number">1</span>,-<span class="hljs-number">1</span>]], dtype=torch.<span class="hljs-built_in">float</span>)
+high_low_kernel = <span class="hljs-number">0.5</span>* torch.tensor([[<span class="hljs-number">1</span>,-<span class="hljs-number">1</span>],[<span class="hljs-number">1</span>,-<span class="hljs-number">1</span>]], dtype=torch.<span class="hljs-built_in">float</span>)
+high_high_kernel = <span class="hljs-number">0.5</span>* torch.tensor([[<span class="hljs-number">1</span>,-<span class="hljs-number">1</span>],[-<span class="hljs-number">1</span>,<span class="hljs-number">1</span>]], dtype=torch.<span class="hljs-built_in">float</span>)
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">convolve_2d</span>(<span class="hljs-params">d: <span class="hljs-built_in">int</span>, kernel: torch.Tensor, mat: torch.Tensor</span>):
+    out = torch.zeros((d//<span class="hljs-number">2</span>,d//<span class="hljs-number">2</span>), dtype=torch.<span class="hljs-built_in">float</span>)
+    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,d, <span class="hljs-number">2</span>):
+        <span class="hljs-keyword">for</span> col <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,d,<span class="hljs-number">2</span>):
+            out[row//<span class="hljs-number">2</span>,col//<span class="hljs-number">2</span>] = torch.mul(kernel, mat[row:row+<span class="hljs-number">2</span>,col:col+<span class="hljs-number">2</span>]).<span class="hljs-built_in">sum</span>()
+    <span class="hljs-keyword">return</span> out
+
+ll = test_vector
+d = power_of_2
+my_coefs = []
+<span class="hljs-comment">#This is the multiresolution analysis part</span>
+<span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(level):
+    new_ll = convolve_2d(d, lowpass_kernel, ll)
+    lh = convolve_2d(d, low_high_kernel, ll)
+    hl = convolve_2d(d, high_low_kernel, ll)
+    hh = convolve_2d(d, high_high_kernel, ll)
+    my_coefs.append(torch.stack([lh,hl,hh]))
+    ll = new_ll
+    d = d//<span class="hljs-number">2</span>
+my_coefs.reverse()
+
+<span class="hljs-comment">#This big happy matrix will be the like the image above.</span>
+one_big_happy_matrix = torch.vstack([torch.hstack([ll,my_coefs[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]]),torch.hstack([my_coefs[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>],my_coefs[<span class="hljs-number">0</span>][<span class="hljs-number">2</span>]])])
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>,level):
+    one_big_happy_matrix = torch.vstack([torch.hstack([one_big_happy_matrix,my_coefs[i][<span class="hljs-number">0</span>]]),torch.hstack([my_coefs[i][<span class="hljs-number">1</span>],my_coefs[i][<span class="hljs-number">2</span>]])])
+
+<span class="hljs-comment"># Now lets do the inverse transform</span>
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">convolve_2d_inverse</span>(<span class="hljs-params">d: <span class="hljs-built_in">int</span>, kernels: <span class="hljs-built_in">list</span>[torch.Tensor], mat: torch.Tensor</span>):
+    <span class="hljs-comment"># start with d is 2 by 2</span>
+    out = torch.zeros((d,d), dtype=torch.<span class="hljs-built_in">float</span>)
+    small_d = d//<span class="hljs-number">2</span>
+    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,small_d):
+        <span class="hljs-keyword">for</span> col <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,small_d):
+            <span class="hljs-keyword">for</span> kernel_index,kernel <span class="hljs-keyword">in</span> <span class="hljs-built_in">enumerate</span>(kernels):
+                out[row*<span class="hljs-number">2</span> + (<span class="hljs-number">1</span> <span class="hljs-keyword">if</span> kernel_index &gt;= <span class="hljs-number">2</span> <span class="hljs-keyword">else</span> <span class="hljs-number">0</span>) , col*<span class="hljs-number">2</span> + (<span class="hljs-number">1</span> <span class="hljs-keyword">if</span> (kernel_index % <span class="hljs-number">2</span>) == <span class="hljs-number">1</span> <span class="hljs-keyword">else</span> <span class="hljs-number">0</span>)] = \
+                kernel[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>]*mat[row,col] + \
+                kernel[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>]*mat[row,col+small_d] + \
+                kernel[<span class="hljs-number">1</span>,<span class="hljs-number">0</span>]*mat[row+small_d,col] + \
+                kernel[<span class="hljs-number">1</span>,<span class="hljs-number">1</span>]*mat[row+small_d,col+small_d]
+    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, d):
+        <span class="hljs-keyword">for</span> col <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, d):
+            mat[row,col] = out[row,col]
+
+maybe_original = one_big_happy_matrix.clone()
+d = <span class="hljs-number">2</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(level):
+    convolve_2d_inverse(d, [lowpass_kernel, low_high_kernel, high_low_kernel, high_high_kernel], maybe_original)
+    d = d*<span class="hljs-number">2</span>
+</code></pre>
+<p>Now that you know how to do the wavelet transform, I'm going to put the wavelet transform
+into an orthogonal matrix. This will make the derivative easier to derive, which I do in a later step. It's probably the slowest method
+of computing a wavelet transform</p>
+<pre><code class="hljs language-python">transform_matrix, inverse_transform_matrix = generate_wavelet_transform(<span class="hljs-number">2</span>)
+</code></pre>
+<p>This returns two matrices, the first is the wavelet transform matrix, and the second is the inverse wavelet transform matrix.
+Also worth noting, since the matrix is an orthogonal matrix, the inverse is just the transpose.</p>
+<h3 id="reconstruction" tabindex="-1"><a class="header-anchor" href="#reconstruction"><span>Reconstruction</span></a></h3>
+<p>Now we can begin the reconstruction. Again, there are multiple ways to do this, but
+I'm going to use the <a href="https://en.wikipedia.org/wiki/Basis_pursuit_denoising">basis pursuit denoising</a> because
+it works well and is really easy:</p>
+<img src="/static/bpdn.png" style="max-width:100%;" alt="basis pursuit denoising"><p>Put into words, we want to find the value for x that minimizes the <a href="https://en.wikipedia.org/wiki/Mean_squared_error">mean squared error</a> between the measurements and the signal while
+at the the same time minimizing the l1 norm of x (the l1 norm is just the sum of the absolute values of x).
+Minimizing the l1 norm is our way of saying we want to find the sparsest solution to the problem.</p>
+<p>In the above equation, y is the measurements, and A is the measurement matrix multiplied by
+the inverse transform matrix, and lambda is just a constant.</p>
+<p>Note: Quick aside about A, and x.</p>
+<p>x starts out as just random noise:</p>
+<pre><code class="hljs language-python">x = torch.randn(signal.shape)
+</code></pre>
+<p>We want x to be in the wavelet domain (because our image is sparse in the wavelet domain).
+So, we have to take the inverse wavelet transform to move x into the image domain.</p>
+<pre><code class="hljs language-python">x_in_image_domain = torch.matmul(
+                inverse_transform, 
+                x)
+</code></pre>
+<p>Then we can do the measurements using the measurement matrix.</p>
+<pre><code class="hljs language-python">measurement_of_x = torch.matmul(
+              measurement_matrix, 
+              x_in_image_domain)
+</code></pre>
+<p>Because matrix multiplication is associative, we can combine the last two steps
+to get our A matrix.</p>
+<pre><code class="hljs language-python">A = torch.matmul(measurement_matrix, inverse_transform)
+</code></pre>
+<p>Now, we can put it all together to get our loss function.</p>
+<pre><code class="hljs language-python"><span class="hljs-comment"># start with a random x. It&#x27;s just noise, so it doesn&#x27;t matter what it is.</span>
+x = torch.randn(signal.shape)
+A = torch.matmul(measurement_matrix, inverse_transform)
+loss = <span class="hljs-number">0.5</span>*torch.square(
+  measurement - torch.matmul(A,x)
+  ).<span class="hljs-built_in">sum</span>()
+  + <span class="hljs-keyword">lambda</span>*torch.<span class="hljs-built_in">abs</span>(x).<span class="hljs-built_in">sum</span>()
+</code></pre>
+<p>Basis pursuit denoising is a convex quadratic problem, so we don't have to worry about local minima. We can choose
+any optimization method we want. I'm going to use <a href="https://en.wikipedia.org/wiki/Stochastic_gradient_descent">stochastic gradient descent</a>
+because it's easy to implement. First, we'll implement it using pytorch, using the same methods we would use
+for training a neural network:</p>
+<pre><code class="hljs language-python"><span class="hljs-keyword">import</span> torch
+
+<span class="hljs-comment"># First we do some sensing</span>
+true_signal = get_signal()
+measurement_matrix = generate_bernoulli_measurement_matrix(row: <span class="hljs-number">768</span>, columns: <span class="hljs-number">1024</span>)
+measurement = compressed_sensing(measurement_matrix, true_signal)
+
+<span class="hljs-comment"># Now we reconstruct the signal</span>
+_transform, inverse_transform = generate_wavelet_transform(true_signal.shape)
+
+<span class="hljs-comment"># start with a random x. It&#x27;s just noise, so it doesn&#x27;t matter what it is.</span>
+x = torch.randn(true_signal.shape[<span class="hljs-number">1</span>], requires_grad=<span class="hljs-literal">True</span>)
+A = torch.matmul(measurement_matrix, inverse_transform)
+
+optimizer = torch.optim.SGD([x], lr=<span class="hljs-number">0.0003</span>, momentum=<span class="hljs-number">0.9</span>)
+<span class="hljs-keyword">lambda</span> = <span class="hljs-number">10_000</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">50</span>):
+    optimizer.zero_grad()
+    <span class="hljs-comment"># same loss as before</span>
+    loss = <span class="hljs-number">0.5</span>*torch.square(
+          measurement - torch.matmul(A,x)
+        ).<span class="hljs-built_in">sum</span>() \
+      + <span class="hljs-keyword">lambda</span>*torch.<span class="hljs-built_in">abs</span>(x).<span class="hljs-built_in">sum</span>()
+    loss.backward()
+    optimizer.step()
+<span class="hljs-comment"># done! </span>
+<span class="hljs-comment"># x is now a lossy approximation of the true signal</span>
+</code></pre>
+<p>I will note that I found the lambda, the learning rate, the momentum, and the number of iterations by trial and error.</p>
+<p>In case you unfamiliar with pytorch:</p>
+<ul>
+<li>the <code>requires_grad=True</code> is what tells pytorch to keep track of the gradient
+of x.</li>
+<li>The <code>optimizer.zero_grad()</code> is what tells pytorch to reset the gradient of x to 0.</li>
+<li>The <code>loss.backward()</code> is what tells pytorch to compute the gradient of x using pytorch's autodiff</li>
+<li>The <code>optimizer.step()</code> is what tells pytorch to update x using the gradient of x and the learning rate.</li>
+</ul>
+<p>Now, because basic pursuit denoising is so simple,  I'm going to do the <a href="https://en.wikipedia.org/wiki/Automatic_differentiation">autodiff</a> by hand to
+show what is actually happening. It's actually only a few lines of code:</p>
+<pre><code class="hljs language-python">x = torch.randn(true_signal.shape[<span class="hljs-number">1</span>])
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">50</span>): 
+  measurement_of_x = torch.matmul(A, x)
+  difference = measurement_of_x - measurement
+  d_weights_1 = <span class="hljs-number">10_000</span>*torch.sign(x)
+  d_weights_2 = torch.matmul(A.t(), difference)
+  diffs = d_weights_1 + d_weights_2
+
+  <span class="hljs-comment"># doing SGD with momentum of 0.9</span>
+  diffs += <span class="hljs-number">0.9</span> * previous_diffs
+  previous_diffs = diffs
+  <span class="hljs-comment"># then we update the weights using a learning rate of 0.0003</span>
+  reconstruction -= <span class="hljs-number">0.0003</span> * diffs
+</code></pre>
+<p>Let's go over why this works. First, let's look at the loss function:</p>
+<pre><code class="hljs language-python">loss = <span class="hljs-number">0.5</span>*torch.square(difference).<span class="hljs-built_in">sum</span>() + <span class="hljs-keyword">lambda</span>*torch.<span class="hljs-built_in">abs</span>(x).<span class="hljs-built_in">sum</span>()
+</code></pre>
+<p>You'll notice that we don't actually compute this.</p>
+<p>That's because the actual value of the loss function doesn't matter.
+It's the gradient of the loss function with respect to x that matters.</p>
+<p>So, let's calculate the gradient. We'll start
+by taking the derivative of lambda*torch.abs(x).sum().
+We are going to use the chain rule to calculate the derivative of the loss function
+by finding the derivative of each individual part, and then multiplying them together</p>
+<p><em>Note</em>: Let z be a free variable that I'm making up to show how to do the derivative
+of each part. We will substitute z for our current gradient as we go along</p>
+<ol>
+<li>start with a derivative of 1</li>
+<li>derivative of lambda*z is lambda (because lambda is a constant)</li>
+<li>derivative of the sum (ie. z_1 + z_2 .... z) with respect to z is 1,</li>
+<li>derivative of abs(z) is sign(z)</li>
+</ol>
+<p>let's bring it together with the chain rule</p>
+<pre><code class="hljs language-python">derivative of <span class="hljs-keyword">lambda</span>*<span class="hljs-built_in">abs</span>(z).<span class="hljs-built_in">sum</span> <span class="hljs-keyword">is</span> <span class="hljs-number">1</span>*<span class="hljs-keyword">lambda</span> * sign(z)
+</code></pre>
+<p>Then plug in x into z and 10_000 into lambda and we get</p>
+<pre><code class="hljs language-python">d_weights_1 = <span class="hljs-number">10_000</span>*torch.sign(x)
+</code></pre>
+<p>Now let's look at:</p>
+<pre><code class="hljs language-python"><span class="hljs-number">0.5</span>*torch.square(difference).<span class="hljs-built_in">sum</span>()
+</code></pre>
+<ol>
+<li>similar to above we start with 1.</li>
+<li>derivative of 0.5 * z with respect to z is 0.5</li>
+<li>derivative of z^2 with respect to z is 2*z</li>
+<li>derivative of the sum ( z_1 + z_2 ... z) is 1</li>
+</ol>
+<p>Multiply together to get</p>
+<pre><code class="hljs language-python"><span class="hljs-number">1</span>*<span class="hljs-number">0.5</span> * <span class="hljs-number">2</span> * z = z
+</code></pre>
+<p>Because of the chain rule, we will plug in the variable <code>difference</code> for <code>z</code>
+So our gradient so far is:</p>
+<pre><code class="hljs language-python">difference * (derivative of difference <span class="hljs-keyword">with</span> respect to x)
+</code></pre>
+<p>So, let's calculate the derivative of difference with respect to x.
+Recall that difference is:</p>
+<pre><code class="hljs language-python">difference = measurement_of_x - measurement
+</code></pre>
+<p>As I said before, the derivative of adding and subtracting a constant is just 1.
+Our new gradient is:</p>
+<pre><code class="hljs language-python">difference * (derivative measurement_of_x <span class="hljs-keyword">with</span> respect to x)
+</code></pre>
+<p>Now, let's calculate the derivative of measurement_of_x with respect to x.
+Recall that measurement_of_x is:</p>
+<pre><code class="hljs language-python">measurement_of_x = torch.matmul(A, x)
+</code></pre>
+<p>The derivative of a matrix A multiplied z with respect to z is
+the transpose of A multiplied by z. Let's plugin <code>difference</code>, and get our the last part
+of this gradient:</p>
+<pre><code class="hljs language-python">torch.matmul(A.t(), difference)
+</code></pre>
+<p>So our final gradient is:</p>
+<pre><code class="hljs language-python"><span class="hljs-number">10_000</span>*torch.sign(x) + torch.matmul(A.t(), difference)
+</code></pre>
+<p>And now you know how to do basic pursuit denoising by hand.
+That's it for the math, now for the hacking!</p>
+<h3 id="the-hacking" tabindex="-1"><a class="header-anchor" href="#the-hacking"><span>The hacking</span></a></h3>
+<p>This entire project started because I was hacking around with compressed sensing,
+seeing how I could corrupt the measurements and still recover the signal. I
+actually found that I can reduce the entire reconstruction to noise just by flipping
+about 8 bits (I do cheat a little bit, by converting from float32 to int16, but you can
+verify that the loss of precision is not the problem)</p>
+<p>See how it works (in typescript this time. ort is the onnx runtime):</p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">const</span> <span class="hljs-title function_">corrupt_samples</span> = (<span class="hljs-params">samples: ort.Tensor</span>) =&gt; {
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">8</span>; i++){
+    samples.<span class="hljs-property">data</span>[i] &amp;= <span class="hljs-number">0x7fff</span>;
+  }
+}
+</code></pre>
+<p>What this does is set the most significant bit of the first 8 samples to 0.
+The samples are most likely represented as <a href="https://en.wikipedia.org/wiki/Two%27s_complement">two's complement</a> integers,
+so this will have one of two effects:</p>
+<ol>
+<li>If the sample is positive, this will have no effect.</li>
+<li>If the sample is negative, this will make it positive and will most likely increase the magnitude of the sample.
+Doing this will corrupt basically any reconstructed image into noise.</li>
+</ol>
+<p>Now, I don't consider this to be novel (obviously taking some samples and multiplying by an extremely large number will corrupt the reconstruction),
+but I do think it's fun because it corrupts the whole image by changing the minimal number of bits.</p>
+<h3 id="the-game" tabindex="-1"><a class="header-anchor" href="#the-game"><span>The game</span></a></h3>
+<p>So here is how the game works, I take your input from the &quot;terminal&quot; and assign
+a value to it. I am not a fan of how riddles often have multiple correct answers, so to make the
+answers more sparse, I eliminated 10 letters of the alphabet (if you look closely you'll see
+that the keyboard in the game has all the invalid keys removed). So, there are only 16 possible
+keys you can press, a nice power of 2.
+I then take the value of each key, and convert it to a binary string.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> letter_to_code = {
+  <span class="hljs-attr">a</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>],
+  <span class="hljs-attr">b</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>],
+  <span class="hljs-attr">c</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>],
+  <span class="hljs-attr">d</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>],
+  <span class="hljs-attr">e</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>],
+  <span class="hljs-attr">f</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>],
+  <span class="hljs-comment">/**
+  * no g
+  */</span>
+  <span class="hljs-attr">h</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>],
+  <span class="hljs-attr">i</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>],
+  <span class="hljs-comment">/**
+  * no j or k
+  */</span>
+  <span class="hljs-attr">l</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>],
+  <span class="hljs-attr">m</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>],
+  <span class="hljs-attr">n</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>],
+  <span class="hljs-attr">o</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>],
+  <span class="hljs-attr">p</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>],
+  <span class="hljs-attr">r</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>],
+  <span class="hljs-attr">s</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>],
+  <span class="hljs-attr">t</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>],
+  <span class="hljs-comment">/**
+  * no u through z
+  */</span>
+};
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">answer_to_byte_pattern</span> = (<span class="hljs-params">answer: <span class="hljs-built_in">string</span></span>) =&gt; {
+  <span class="hljs-keyword">const</span> lowercase = answer.<span class="hljs-title function_">toLowerCase</span>();
+  <span class="hljs-keyword">const</span> <span class="hljs-attr">pattern</span>: <span class="hljs-built_in">number</span>[] = [];
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">8</span>; i++) {
+    <span class="hljs-keyword">const</span> letter = lowercase[i] ?? <span class="hljs-string">&quot;a&quot;</span>;
+    <span class="hljs-keyword">const</span> code = letter_to_code[letter] ?? letter_to_code[<span class="hljs-string">&quot;a&quot;</span>];
+    pattern.<span class="hljs-title function_">push</span>(...code);
+  }
+  <span class="hljs-keyword">return</span> pattern;
+};
+</code></pre>
+<p>Next:</p>
+<ul>
+<li>I take a compressed measurement of an image.</li>
+<li>I look up the answer to the puzzle, and assign each letter the code as above</li>
+<li>I try to &quot;plug-in&quot; the answer to the measurements.</li>
+</ul>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">//This pattern will be [0, 1, 1, 0], see table above</span>
+<span class="hljs-keyword">const</span> pattern = <span class="hljs-title function_">answer_to_byte_pattern</span>(<span class="hljs-string">&quot;h&quot;</span>);
+<span class="hljs-comment">//This in pytorch and compiled for the web with onnx</span>
+measurement = torch.<span class="hljs-title function_">matmul</span>(measurement, signal).<span class="hljs-title function_">to</span>(torch.<span class="hljs-property">int16</span>);
+
+<span class="hljs-comment">//Now let&#x27;s find a measurement who&#x27;s most significant bit is 0,</span>
+<span class="hljs-comment">// the first bit of our pattern</span>
+<span class="hljs-keyword">let</span> measurement_index = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">for</span>(; measurement_index &lt; measurement.<span class="hljs-property">data_length</span>; measurement_index++){
+  <span class="hljs-keyword">if</span>(measurement.<span class="hljs-property">data</span>[measurement_index] &amp; <span class="hljs-number">0x8000</span> == <span class="hljs-number">0</span>){
+    <span class="hljs-comment">//We found it</span>
+    <span class="hljs-keyword">break</span>;
+  }
+}
+<span class="hljs-comment">//Now we can plug the first bit of our pattern</span>
+measurement.<span class="hljs-property">data</span>[measurement_index] = 
+          (pattern[<span class="hljs-number">0</span>] &lt;&lt; <span class="hljs-number">14</span>) | 
+          (measurement.<span class="hljs-property">data</span>[measurement_index] &amp; <span class="hljs-number">0x7fff</span>);
+
+
+
+</code></pre>
+<p>Obviously this doesn't actually do anything because
+we haven't changed the measurement. We specifically looked for a measurement
+that matched our pattern.
+This means that if you type in the correct answer,
+you'll get the correct image.
+Which is exactly what we want!</p>
+<p>We plug in the code for the current guess.
+If it's correct, we will get the correct image, if it's wrong
+we will get noise. If it's partially correct, we will less noise,
+which is a fun hint.</p>
+<p>Here is the actual code for the game. In this version,
+I look at the top 2 most significant bits, instead of the just the top bit.
+This will cause the corrupted int16 to be a little less likely to
+corrupt the image. I did this so that you will get more hints
+from looking at the image.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">import</span> { <span class="hljs-title class_">Tensor</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;onnxruntime-web&quot;</span>;
+<span class="hljs-keyword">import</span> { answer_to_byte_pattern } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./answer_to_byte_pattern&quot;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">adjust_samples_for_current_guess</span> = (<span class="hljs-params">
+  answer: <span class="hljs-built_in">string</span>,
+  current_guess: <span class="hljs-built_in">string</span>,
+  samples: Tensor
+</span>) =&gt; {
+  <span class="hljs-comment">//the correct answer will generate the correct image</span>
+  <span class="hljs-keyword">const</span> byte_pattern = <span class="hljs-title function_">answer_to_byte_pattern</span>(answer);
+  <span class="hljs-keyword">const</span> current_guess_pattern = <span class="hljs-title function_">answer_to_byte_pattern</span>(current_guess);
+
+  <span class="hljs-keyword">let</span> current_sample_index = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">let</span> times_through_all_samples = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; byte_pattern.<span class="hljs-property">length</span>; i++) {
+    <span class="hljs-comment">/**
+    * Iterate through the samples until we find a sample that
+    * matches the current byte pattern. this will ensure that
+    * the correct answer will generate the correct image
+    */</span>
+    <span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) {
+      <span class="hljs-keyword">const</span> sample_data = (samples.<span class="hljs-property">data</span> <span class="hljs-keyword">as</span> <span class="hljs-title class_">Int16Array</span>)[current_sample_index];
+      current_sample_index++;
+      <span class="hljs-keyword">if</span> (current_sample_index &gt;= samples.<span class="hljs-property">dims</span>[<span class="hljs-number">0</span>]) {
+        current_sample_index = <span class="hljs-number">0</span>;
+        times_through_all_samples++;
+        <span class="hljs-keyword">if</span> (times_through_all_samples &gt; <span class="hljs-number">2</span>) {
+          <span class="hljs-keyword">break</span>;
+        }
+      }
+      <span class="hljs-keyword">const</span> value = (sample_data &amp; <span class="hljs-number">0xc000</span>) &gt;&gt; <span class="hljs-number">14</span>;
+      <span class="hljs-keyword">switch</span> (value) {
+        <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>:
+          <span class="hljs-keyword">if</span> (byte_pattern[i] != <span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">continue</span>;
+          }
+          <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>:
+          <span class="hljs-keyword">if</span> (byte_pattern[i] != <span class="hljs-number">1</span>) {
+            <span class="hljs-keyword">continue</span>;
+          }
+          <span class="hljs-keyword">break</span>;
+        <span class="hljs-attr">default</span>:
+          <span class="hljs-keyword">continue</span>;
+      }
+
+      (samples.<span class="hljs-property">data</span> <span class="hljs-keyword">as</span> <span class="hljs-title class_">Int16Array</span>)[current_sample_index] =
+        (sample_data &amp; <span class="hljs-number">0x3fff</span>) |
+        ((current_guess_pattern[i] == <span class="hljs-number">1</span> ? <span class="hljs-number">3</span> : <span class="hljs-number">0</span>) &lt;&lt; <span class="hljs-number">14</span>);
+      <span class="hljs-keyword">break</span>;
+    }
+  }
+  <span class="hljs-keyword">return</span> samples;
+};
+</code></pre>
+<p>That's the game!</p>
+<p>If you enjoy this kind of stuff, follow me on <a href="https://github.com/mmulet">GitHub</a>
+or even <a href="https://github.com/sponsors/mmulet">sponsor</a> if you want to support my work.</p>
+<p>Check out my other stuff:</p>
+<ul>
+<li><a href="https://jellyml.com">JellyML</a> - A tool for repeatable machine learning experiments</li>
+<li><a href="https://www.coderelay.io/fontemon.html">Fontemon</a> - A Pokémon parody in a font</li>
+<li><a href="https://www.coderelay.io">Code Relay</a> - A crowdsourced coding site.</li>
+</ul>
+</div><footer class="box"><p>copyright 2023 Late for Dinner Studios, LLC</p>
+<h3>Credits</h3>
+<p>The game (including code and graphics) was made by Michael Mulet. You can find the source code on
+<a href="https://github.com/mmulet/hack-words">GitHub</a>.</p>
+<p style="font-family: chikarego2">The font <a href="https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=3780">ChiKareGo2 by Giles Booth </a>is licensed under Creative Commons Attribution</p><p>The following fonts are in the public domain</p><ul> <li style="font-family: karen2mono"> <a href="http://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=298">karen2mono by Paul Spades</a></li><li style="font-family: trueitalicWIP"><a href="https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=372">trueitalicWIP by Paul Spades</a></li><li style="font-family: frak"><a href="https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=467">PixelFraktur by Extant</a></li><li style="font-family: Mademoiselle"><a href="https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=129">Mademoiselle by MistressEllipsis</a></li></ul><p>The sprites were by Jerom <a href="https://opengameart.org/content/32x32-fantasy-tileset">opengameart.org</a> used
+under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported license</a></p>
+</footer></body><script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script><script src="/code/index.js"></script></html>
