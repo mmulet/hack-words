@@ -41,10 +41,10 @@ export class ComputerController {
     "big-button"
   ) as HTMLButtonElement;
 
-  computer_image: HTMLImageElement = load_image("/static/computer0001.png");
-  tube_images: HTMLImageElement = load_image("/static/tubes.png");
+  computer_image: HTMLImageElement = load_image("static/computer0001.png");
+  tube_images: HTMLImageElement = load_image("static/tubes.png");
 
-  win_images: HTMLImageElement = load_image("/static/win.png");
+  win_images: HTMLImageElement = load_image("static/win.png");
 
   tubes: ColorTube[] = [
     {
@@ -85,7 +85,7 @@ export class ComputerController {
     },
   ];
 
-  scanlines = load_image("/static/scanlines.png");
+  scanlines = load_image("static/scanlines.png");
 
   constructor() {
     const ratio = window.devicePixelRatio || 1;

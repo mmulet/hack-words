@@ -28,7 +28,7 @@ export class Controller {
 
   puzzle_index = Math.floor(Math.random() * Object.keys(puzzles).length);
 
-  tileset = load_image("/static/fantasy-tileset.png");
+  tileset = load_image("static/fantasy-tileset.png");
   image_data_canvas = document.createElement("canvas");
   image_data_context = this.image_data_canvas.getContext("2d")!;
 

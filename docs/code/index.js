@@ -305,9 +305,9 @@
       this.big_button = document.getElementById(
         "big-button"
       );
-      this.computer_image = load_image("/static/computer0001.png");
-      this.tube_images = load_image("/static/tubes.png");
-      this.win_images = load_image("/static/win.png");
+      this.computer_image = load_image("static/computer0001.png");
+      this.tube_images = load_image("static/tubes.png");
+      this.win_images = load_image("static/win.png");
       this.tubes = [
         {
           x: 103,
@@ -346,7 +346,7 @@
           height: 0
         }
       ];
-      this.scanlines = load_image("/static/scanlines.png");
+      this.scanlines = load_image("static/scanlines.png");
       this.color_index = 0;
       this.on_puzzle_solved = () => {
         this.fuel_animation.push({
@@ -890,7 +890,7 @@
       // puzzle_index = 1; // Math.floor(Math.random() * puzzles.length);
       // image_index = 29; //Math.floor(Math.random() * 25 * 8);
       this.puzzle_index = Math.floor(Math.random() * Object.keys(puzzles).length);
-      this.tileset = load_image("/static/fantasy-tileset.png");
+      this.tileset = load_image("static/fantasy-tileset.png");
       this.image_data_canvas = document.createElement("canvas");
       this.image_data_context = this.image_data_canvas.getContext("2d");
       this.solve_count = 0;
@@ -1040,10 +1040,10 @@
     const start_time = performance.now();
     const num = size.toString().padStart(2, "0");
     const [samples, model, reconstruct, sample_func] = await Promise.all([
-      load_tensor(`/static/samples_${num}.bin`),
-      ort.InferenceSession.create(`/static/web_gradient_descent_${num}.onnx`, {}),
-      ort.InferenceSession.create(`/static/web_reconstruction_${num}.onnx`),
-      ort.InferenceSession.create(`/static/web_sample_${num}.onnx`)
+      load_tensor(`static/samples_${num}.bin`),
+      ort.InferenceSession.create(`static/web_gradient_descent_${num}.onnx`, {}),
+      ort.InferenceSession.create(`static/web_reconstruction_${num}.onnx`),
+      ort.InferenceSession.create(`static/web_sample_${num}.onnx`)
     ]);
     console.log(performance.now() - start_time);
     console.log("session created");

@@ -409,23 +409,23 @@ td {
   color: black;
 }</style><title>hack-words</title><link rel="stylesheet" href="/code/index.css"><style>@font-face {
   font-family: 'ChiKareGo2';
-  src: url('/static/ChiKareGo2.ttf');
+  src: url('static/ChiKareGo2.ttf');
 }
 @font-face {
   font-family: 'karen2mono';
-  src: url('/static/karen2mono.ttf');
+  src: url('static/karen2mono.ttf');
 }
   @font-face {
   font-family: 'trueitalicWIP';
-  src: url('/static/trueitalicWIP.ttf');
+  src: url('static/trueitalicWIP.ttf');
 }
 @font-face {
   font-family: 'frak';
-  src: url('/static/PixelFraktur.ttf');
+  src: url('static/PixelFraktur.ttf');
 }
 @font-face {
   font-family: 'Mademoiselle';
-  src: url('/static/Mademoiselle.ttf');
+  src: url('static/Mademoiselle.ttf');
 }
 #terminal {
   color: #e4ad39; 
@@ -501,9 +501,7 @@ button {
 body {
   font-family: ChiKareGo2;
 }
-
-
-</style></head><body><canvas id="canvas" width="64" height="64" style="display: none;"></canvas><img src="/static/logo0001.png" style="width: 100%; max-width: 512px; margin: 0 auto; display: block; padding: 10px;"><div class="box"><h3>Welcome to hack-words</h3>
+</style><base href="/hack-words/"></head><body><canvas id="canvas" width="64" height="64" style="display: none;"></canvas><img src="static/logo0001.png" style="width: 100%; max-width: 512px; margin: 0 auto; display: block; padding: 10px;"><div class="box"><h3>Welcome to hack-words</h3>
 <p>This is a fun little game I thought of while playing around with some
 cool math called <a href="https://en.wikipedia.org/wiki/Compressed_sensing">compressed sensing</a>. You can read more about the math, the hacking, and what makes this game
 possible by reading the <a href="/#the-math-and-the-hacking">blog post under the game</a>.</p>
@@ -641,7 +639,7 @@ A lot of people will probably be familiar with the fourier transform, but not ev
 so have a look below at a 2d wavelet transform of an image.</p>
 <p>Fun Fact: Electrical engineers have to do a fourier transform every day. Otherwise their bodies will disintegrate into the
 sinusoids that make up everything.</p>
-<img src="/static/Jpeg2000_2-level_wavelet_transform-lichtenstein.png" style="max-width:80%;" alt="2d wavelet transform"><p>Look at how sparse this is! (Alessio Damato CC BY-SA 3.0 via <a href="https://commons.wikimedia.org/wiki/File:Jpeg2000_2-level_wavelet_transform-lichtenstein.png">Wikimedia Commons</a> )</p>
+<img src="static/Jpeg2000_2-level_wavelet_transform-lichtenstein.png" style="max-width:80%;" alt="2d wavelet transform"><p>Look at how sparse this is! (Alessio Damato CC BY-SA 3.0 via <a href="https://commons.wikimedia.org/wiki/File:Jpeg2000_2-level_wavelet_transform-lichtenstein.png">Wikimedia Commons</a> )</p>
 <p>Specifically, I'm using the <a href="https://en.wikipedia.org/wiki/Haar_wavelet">haar wavelet</a>, the oldest and simplest wavelet.
 I mostly like to use it for low-resolution images because more complicated wavelets tend to have a &quot;smoothing&quot; effect
 that I find undesirable.</p>
@@ -729,7 +727,7 @@ Also worth noting, since the matrix is an orthogonal matrix, the inverse is just
 <p>Now we can begin the reconstruction. Again, there are multiple ways to do this, but
 I'm going to use the <a href="https://en.wikipedia.org/wiki/Basis_pursuit_denoising">basis pursuit denoising</a> because
 it works well and is really easy:</p>
-<img src="/static/bpdn.png" style="max-width:100%;" alt="basis pursuit denoising"><p>Put into words, we want to find the value for x that minimizes the <a href="https://en.wikipedia.org/wiki/Mean_squared_error">mean squared error</a> between the measurements and the signal while
+<img src="static/bpdn.png" style="max-width:100%;" alt="basis pursuit denoising"><p>Put into words, we want to find the value for x that minimizes the <a href="https://en.wikipedia.org/wiki/Mean_squared_error">mean squared error</a> between the measurements and the signal while
 at the the same time minimizing the l1 norm of x (the l1 norm is just the sum of the absolute values of x).
 Minimizing the l1 norm is our way of saying we want to find the sparsest solution to the problem.</p>
 <p>In the above equation, y is the measurements, and A is the measurement matrix multiplied by

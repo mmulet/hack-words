@@ -10,23 +10,23 @@ html(lang="en")
     style.
       @font-face {
         font-family: 'ChiKareGo2';
-        src: url('/static/ChiKareGo2.ttf');
+        src: url('static/ChiKareGo2.ttf');
       }
       @font-face {
         font-family: 'karen2mono';
-        src: url('/static/karen2mono.ttf');
+        src: url('static/karen2mono.ttf');
       }
         @font-face {
         font-family: 'trueitalicWIP';
-        src: url('/static/trueitalicWIP.ttf');
+        src: url('static/trueitalicWIP.ttf');
       }
       @font-face {
         font-family: 'frak';
-        src: url('/static/PixelFraktur.ttf');
+        src: url('static/PixelFraktur.ttf');
       }
       @font-face {
         font-family: 'Mademoiselle';
-        src: url('/static/Mademoiselle.ttf');
+        src: url('static/Mademoiselle.ttf');
       }
       #terminal {
         color: #e4ad39; 
@@ -102,12 +102,13 @@ html(lang="en")
       body {
         font-family: ChiKareGo2;
       }
-     
+
+    base(href="/hack-words/")
      
 
   body
     canvas(id="canvas", width="64", height="64" style="display: none;")
-    img(src="/static/logo0001.png" style="width: 100%; max-width: 512px; margin: 0 auto; display: block; padding: 10px;")
+    img(src="static/logo0001.png" style="width: 100%; max-width: 512px; margin: 0 auto; display: block; padding: 10px;")
     .box
       :plain-markdown
         ### Welcome to hack-words
@@ -148,7 +149,7 @@ html(lang="en")
       div(class="cursive") Dr. J. B. Watson
 
     
-    //- img(src="/static/tubes.png")
+    //- img(src="static/tubes.png")
     div(style="position: relative")
       canvas(id="computer_canvas", width="512", height="1024" style="max-width: 100vw;")
       div(id="terminal")
@@ -309,7 +310,7 @@ html(lang="en")
           sinusoids that make up everything.
 
 
-      img(src="/static/Jpeg2000_2-level_wavelet_transform-lichtenstein.png" style="max-width:80%;" alt="2d wavelet transform"
+      img(src="static/Jpeg2000_2-level_wavelet_transform-lichtenstein.png" style="max-width:80%;" alt="2d wavelet transform"
       )
 
 
@@ -411,7 +412,7 @@ html(lang="en")
         Now we can begin the reconstruction. Again, there are multiple ways to do this, but 
         I'm going to use the [basis pursuit denoising](https://en.wikipedia.org/wiki/Basis_pursuit_denoising) because 
         it works well and is really easy:
-      img(src="/static/bpdn.png" style="max-width:100%;", alt="basis pursuit denoising")
+      img(src="static/bpdn.png" style="max-width:100%;", alt="basis pursuit denoising")
       :markdown
         Put into words, we want to find the value for x that minimizes the [mean squared error](https://en.wikipedia.org/wiki/Mean_squared_error) between the measurements and the signal while 
         at the the same time minimizing the l1 norm of x (the l1 norm is just the sum of the absolute values of x).
