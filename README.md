@@ -2,7 +2,7 @@
 
 This is a fun little game I thought of while playing around with some
         cool math called [compressed sensing](https://en.wikipedia.org/wiki/Compressed_sensing).
-Check it out at [hack-words.com](https://hack-words.com)
+Check it out at [https://mmulet.github.io/hack-words/](https://mmulet.github.io/hack-words/)
 
 ## Structure of the hack-words repository
 hack-words
